@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">News Hub</div>
+    <nav>
+      <ul>
+        <li><button class="category-btn" onclick="fetchNews('general')">Top Headlines</button></li>
+        <li><button class="category-btn" onclick="fetchNews('sports')">Sports</button></li>
+        <li><button class="category-btn" onclick="fetchNews('technology')">Technology</button></li>
+        <li><button class="category-btn" onclick="fetchNews('business')">Business</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="news-container">
+      <div class="loading" id="loading">Loading...</div>
+      <div id="articles"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 News Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
